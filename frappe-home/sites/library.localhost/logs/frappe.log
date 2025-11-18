@@ -1,0 +1,292 @@
+2025-08-26 12:52:20,141 ERROR frappe Unable to load translations
+Site: library.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'library_management'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'library_management'
+2025-08-26 12:52:20,145 ERROR frappe Unable to load translations
+Site: library.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'library_management'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'library_management'
+2025-08-26 12:55:18,051 ERROR frappe Unable to load translations
+Site: library.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'library_management'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'library_management'
+2025-08-26 12:55:18,053 ERROR frappe Unable to load translations
+Site: library.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/app.py", line 102, in application
+    init_request(request)
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/app.py", line 178, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 208, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 1040, in setup_module_map
+    for module in get_module_list(app):
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 881, in get_module_list
+    return get_file_items(get_app_path(app_name, "modules.txt"))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'library_management'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/utils/redis_wrapper.py", line 253, in hget
+    value = generator()
+            ^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 190, in get_translations_from_apps
+    translations.update(get_translations_from_csv(lang, app) or {})
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/translate.py", line 202, in get_translations_from_csv
+    os.path.join(frappe.get_app_path(app, "translations"), lang + ".csv"), lang, app
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 846, in get_app_path
+    return get_pymodule_path(app_name, *joins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 876, in get_pymodule_path
+    return abspath(join(dirname(get_module(scrub(modulename)).__file__ or ""), *joins))
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntuadmin/frappe-home/apps/frappe/frappe/__init__.py", line 817, in get_module
+    return importlib.import_module(modulename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'library_management'
+2025-11-18 12:53:07,053 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doctype': 'User', 'name': 'Administrator', 'cmd': 'frappe.desk.form.load.getdoc'}
+2025-11-18 13:03:16,181 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"User","name":"new-user-kkngjxiggk","__islocal":1,"__unsaved":1,"owner":"Administrator","enabled":1,"language":"en","send_welcome_email":1,"unsubscribed":0,"role_profiles":[],"roles":[],"block_modules":[],"mute_sounds":0,"desk_theme":"Light","code_editor_type":"vscode","search_bar":1,"notifications":1,"list_sidebar":1,"bulk_actions":1,"view_switcher":1,"form_sidebar":1,"timeline":1,"dashboard":1,"show_absolute_datetime_in_timeline":0,"logout_all_sessions":1,"document_follow_notify":0,"document_follow_frequency":"Daily","follow_created_documents":0,"follow_commented_documents":0,"follow_liked_documents":0,"follow_assigned_documents":0,"follow_shared_documents":0,"thread_notify":1,"send_me_a_copy":0,"allowed_in_mentions":1,"user_emails":[],"defaults":[],"simultaneous_sessions":2,"user_type":"System User","bypass_restrict_ip_check_if_2fa_enabled":0,"social_logins":[],"onboarding_status":"{}","__run_link_triggers":1,"email":"test@gmail.com","first_name":"test1"}', 'cmd': 'frappe.client.save'}
+2025-11-18 13:06:24,700 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"User","name":"new-user-ydvrnetxwk","__islocal":1,"__unsaved":1,"owner":"Administrator","enabled":1,"language":"en","send_welcome_email":1,"unsubscribed":0,"role_profiles":[],"roles":[],"block_modules":[],"mute_sounds":0,"desk_theme":"Light","code_editor_type":"vscode","search_bar":1,"notifications":1,"list_sidebar":1,"bulk_actions":1,"view_switcher":1,"form_sidebar":1,"timeline":1,"dashboard":1,"show_absolute_datetime_in_timeline":0,"logout_all_sessions":1,"document_follow_notify":0,"document_follow_frequency":"Daily","follow_created_documents":0,"follow_commented_documents":0,"follow_liked_documents":0,"follow_assigned_documents":0,"follow_shared_documents":0,"thread_notify":1,"send_me_a_copy":0,"allowed_in_mentions":1,"user_emails":[],"defaults":[],"simultaneous_sessions":2,"user_type":"System User","bypass_restrict_ip_check_if_2fa_enabled":0,"social_logins":[],"onboarding_status":"{}","__run_link_triggers":1,"email":"test@gmail.com","first_name":"test1"}', 'cmd': 'frappe.client.save'}
+2025-11-18 13:07:48,303 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"User","name":"new-user-ydvrnetxwk","__islocal":1,"__unsaved":1,"owner":"Administrator","enabled":1,"language":"en","send_welcome_email":1,"unsubscribed":0,"role_profiles":[],"roles":[],"block_modules":[],"mute_sounds":0,"desk_theme":"Light","code_editor_type":"vscode","search_bar":1,"notifications":1,"list_sidebar":1,"bulk_actions":1,"view_switcher":1,"form_sidebar":1,"timeline":1,"dashboard":1,"show_absolute_datetime_in_timeline":0,"logout_all_sessions":1,"document_follow_notify":0,"document_follow_frequency":"Daily","follow_created_documents":0,"follow_commented_documents":0,"follow_liked_documents":0,"follow_assigned_documents":0,"follow_shared_documents":0,"thread_notify":1,"send_me_a_copy":0,"allowed_in_mentions":1,"user_emails":[],"defaults":[],"simultaneous_sessions":2,"user_type":"System User","bypass_restrict_ip_check_if_2fa_enabled":0,"social_logins":[],"onboarding_status":"{}","__run_link_triggers":false,"email":"test@gmail.com","first_name":"test1","time_zone":"Asia/Kolkata"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-11-18 13:08:39,597 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doc': '{"docstatus":0,"doctype":"User","name":"new-user-ufavrxehci","__islocal":1,"__unsaved":1,"owner":"Administrator","enabled":1,"language":"en","send_welcome_email":1,"unsubscribed":0,"role_profiles":[],"roles":[],"block_modules":[],"mute_sounds":0,"desk_theme":"Light","code_editor_type":"vscode","search_bar":1,"notifications":1,"list_sidebar":1,"bulk_actions":1,"view_switcher":1,"form_sidebar":1,"timeline":1,"dashboard":1,"show_absolute_datetime_in_timeline":0,"logout_all_sessions":1,"document_follow_notify":0,"document_follow_frequency":"Daily","follow_created_documents":0,"follow_commented_documents":0,"follow_liked_documents":0,"follow_assigned_documents":0,"follow_shared_documents":0,"thread_notify":1,"send_me_a_copy":0,"allowed_in_mentions":1,"user_emails":[],"defaults":[],"simultaneous_sessions":2,"user_type":"System User","bypass_restrict_ip_check_if_2fa_enabled":0,"social_logins":[],"onboarding_status":"{}","time_zone":"Asia/Kolkata","email":"test@gmail.com","first_name":"test1"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-11-18 13:13:25,122 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'user': 'test@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2025-11-18 13:13:53,323 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doc': '{"name":"test@gmail.com","owner":"Administrator","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator","docstatus":0,"idx":0,"enabled":1,"email":"test@gmail.com","first_name":"test1","full_name":"test1","username":"test","language":"en","time_zone":"Asia/Kolkata","send_welcome_email":0,"unsubscribed":0,"mute_sounds":0,"desk_theme":"Light","code_editor_type":"vscode","search_bar":1,"notifications":1,"list_sidebar":1,"bulk_actions":1,"view_switcher":1,"form_sidebar":1,"timeline":1,"dashboard":1,"show_absolute_datetime_in_timeline":0,"new_password":"test1","logout_all_sessions":1,"document_follow_notify":0,"document_follow_frequency":"Daily","follow_created_documents":0,"follow_commented_documents":0,"follow_liked_documents":0,"follow_assigned_documents":0,"follow_shared_documents":0,"thread_notify":1,"send_me_a_copy":0,"allowed_in_mentions":1,"simultaneous_sessions":2,"login_after":0,"user_type":"System User","login_before":0,"bypass_restrict_ip_check_if_2fa_enabled":0,"onboarding_status":"{}","doctype":"User","role_profiles":[],"roles":[{"docstatus":0,"doctype":"Has Role","name":"q5qj5djjjd","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":1,"role":"Accounts Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qmbnb257","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":2,"role":"Accounts User","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qvu86c7j","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":3,"role":"Dashboard Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5q585jcej","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":4,"role":"Inbox User","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qocu9bbf","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":5,"role":"Knowledge Base Contributor","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qse9o75v","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":6,"role":"Knowledge Base Editor","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qkrpsl91","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":7,"role":"Maintenance Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qrqj4h0u","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":8,"role":"Maintenance User","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qhrj3jaf","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":9,"role":"Marketing Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qc7opqaf","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":10,"role":"Newsletter Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qdlabnee","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":11,"role":"Prepared Report User","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qqjhfadc","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":12,"role":"Purchase Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qhiuimmv","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":13,"role":"Purchase Master Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5q2i16sk4","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":14,"role":"Purchase User","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qmm48b6i","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":15,"role":"Report Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5q1frfb6m","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":16,"role":"Sales Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5q52t23nh","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":17,"role":"Sales Master Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qodrmtnl","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":18,"role":"Sales User","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5q90pfun0","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":19,"role":"Script Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5qtuelksv","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":20,"role":"Translator","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5q0lft2bc","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":21,"role":"Website Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"},{"docstatus":0,"doctype":"Has Role","name":"q5q85eh1kg","__unsaved":1,"owner":"Administrator","parent":"test@gmail.com","parentfield":"roles","parenttype":"User","idx":22,"role":"Workspace Manager","creation":"2025-11-18 18:41:16.940104","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator"}],"block_modules":[],"user_emails":[],"defaults":[],"social_logins":[{"name":"phld4of3g1","owner":"Administrator","creation":"2025-11-18 18:41:58.974915","modified":"2025-11-18 18:43:03.449108","modified_by":"Administrator","docstatus":0,"idx":1,"provider":"frappe","userid":"514e1e617a46b7daaac1b2b6be535fa9d5dd8d9","parent":"test@gmail.com","parentfield":"social_logins","parenttype":"User","doctype":"User Social Login"}],"__onload":{"all_modules":["Automation","Contacts","Core","Custom","Desk","Email","Geo","Integrations","Library Management","Printing","Website","Workflow"]},"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-11-18 13:15:43,953 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doctype': 'User', 'name': 'infopython024@gmail.com', 'cmd': 'frappe.desk.form.load.getdoc'}

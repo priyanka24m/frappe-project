@@ -1,0 +1,250 @@
+2025-08-26 12:21:59,527 DEBUG cd frappe-home && python3 -m venv env
+2025-08-26 12:22:02,441 DEBUG cd frappe-home && /home/ubuntuadmin/frappe-home/env/bin/python -m pip install --quiet --upgrade pip
+2025-08-26 12:22:04,219 DEBUG cd frappe-home && /home/ubuntuadmin/frappe-home/env/bin/python -m pip install --quiet wheel
+2025-08-26 12:22:05,144 LOG Getting frappe
+2025-08-26 12:22:05,144 DEBUG cd frappe-home/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-08-26 12:22:22,224 LOG Installing frappe
+2025-08-26 12:22:22,226 DEBUG cd /home/ubuntuadmin/frappe-home && /home/ubuntuadmin/frappe-home/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntuadmin/frappe-home/apps/frappe 
+2025-08-26 12:23:14,763 DEBUG cd /home/ubuntuadmin/frappe-home/apps/frappe && yarn install --check-files
+2025-08-26 12:24:18,021 DEBUG cd frappe-home && bench build
+2025-08-26 12:24:18,136 INFO /home/ubuntuadmin/frappe-env/bin/bench build
+2025-08-26 12:24:40,613 LOG setting up backups
+2025-08-26 12:24:41,084 LOG backups were set up
+2025-08-26 12:24:41,084 INFO Bench frappe-home initialized
+2025-08-26 12:27:06,104 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-08-26 12:27:06,351 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-08-26 12:27:06,365 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-08-26 12:27:06,369 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-08-26 12:27:06,375 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-08-26 12:29:22,636 INFO /home/ubuntuadmin/frappe-env/bin/bench find .
+2025-08-26 12:29:32,144 INFO /home/ubuntuadmin/frappe-env/bin/bench new-app library_management
+2025-08-26 12:29:32,148 LOG creating new app library_management
+2025-08-26 12:48:23,758 LOG Installing library_management
+2025-08-26 12:48:23,759 DEBUG cd /home/ubuntuadmin/frappe-home && /home/ubuntuadmin/frappe-home/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntuadmin/frappe-home/apps/library_management 
+2025-08-26 12:48:25,707 DEBUG bench build --app library_management
+2025-08-26 12:48:25,822 INFO /home/ubuntuadmin/frappe-env/bin/bench build --app library_management
+2025-08-26 12:48:46,504 INFO /home/ubuntuadmin/frappe-env/bin/bench new-site library.localhost
+2025-08-26 12:51:51,446 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost install-app library_management
+2025-08-26 12:52:01,491 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost list-apps
+2025-08-26 12:53:21,732 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost list-apps
+2025-08-26 12:55:34,656 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-08-26 12:55:34,905 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-08-26 12:55:34,915 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-08-26 12:55:34,925 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-08-26 12:55:34,937 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-08-26 12:56:12,169 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost console
+2025-08-26 12:57:00,550 INFO /home/ubuntuadmin/frappe-env/bin/bench set-config -g developer_mode true
+2025-08-26 12:57:06,763 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-08-26 12:57:07,022 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-08-26 12:57:07,024 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-08-26 12:57:07,030 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-08-26 12:57:07,053 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-08-26 16:13:34,658 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-08-26 16:13:35,137 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-08-26 16:13:35,144 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-08-26 16:13:35,145 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-08-26 16:13:35,149 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-08-27 14:14:32,395 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-08-27 14:14:32,843 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-08-27 14:14:32,852 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-08-27 14:14:32,856 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-08-27 14:14:32,869 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-08-27 14:28:23,689 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost mariadb
+2025-08-29 12:00:01,562 INFO /home/ubuntuadmin/frappe-env/bin/bench --verbose --site all backup
+2025-09-01 18:00:01,715 INFO /home/ubuntuadmin/frappe-env/bin/bench --verbose --site all backup
+2025-09-02 10:28:46,565 INFO /home/ubuntuadmin/frappe-env/bin/bench --site
+2025-09-02 10:28:56,058 INFO /home/ubuntuadmin/frappe-env/bin/bench --help
+2025-09-02 10:29:46,181 INFO /home/ubuntuadmin/frappe-env/bin/bench --list-sites
+2025-09-02 10:29:51,733 INFO /home/ubuntuadmin/frappe-env/bin/bench list-sites
+2025-09-02 10:32:20,219 INFO /home/ubuntuadmin/frappe-env/bin/bench new-site mysite
+2025-09-02 10:33:29,120 INFO /home/ubuntuadmin/frappe-env/bin/bench new-site mysite
+2025-09-02 10:33:49,894 INFO /home/ubuntuadmin/frappe-env/bin/bench new-site mysite
+2025-09-02 10:39:23,082 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost install-app erpnext
+2025-09-02 10:40:24,533 INFO /home/ubuntuadmin/frappe-env/bin/bench get-app erpnext
+2025-09-02 10:40:25,467 LOG Getting erpnext
+2025-09-02 10:40:25,468 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2025-09-02 10:40:32,226 LOG Installing erpnext
+2025-09-02 10:40:32,226 DEBUG cd /home/ubuntuadmin/frappe-home && /home/ubuntuadmin/frappe-home/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntuadmin/frappe-home/apps/erpnext 
+2025-09-02 10:41:00,290 DEBUG cd /home/ubuntuadmin/frappe-home/apps/erpnext && yarn install --check-files
+2025-09-02 10:41:02,500 DEBUG bench build --app erpnext
+2025-09-02 10:41:02,635 INFO /home/ubuntuadmin/frappe-env/bin/bench build --app erpnext
+2025-09-02 10:41:46,314 INFO /home/ubuntuadmin/frappe-env/bin/bench new-site mysite
+2025-09-02 10:48:37,010 INFO /home/ubuntuadmin/frappe-env/bin/bench site
+2025-09-02 10:48:43,269 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-02 10:48:43,705 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-02 10:48:43,723 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-02 10:48:43,724 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-02 10:48:43,724 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-02 10:51:35,014 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-02 10:51:35,307 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-02 10:51:35,323 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-02 10:51:35,345 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-02 10:51:35,353 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-02 10:58:00,787 INFO /home/ubuntuadmin/frappe-env/bin/bench drop-site mysite
+2025-09-02 10:58:10,721 INFO /home/ubuntuadmin/frappe-env/bin/bench drop-site mysite
+2025-09-02 11:00:17,526 INFO /home/ubuntuadmin/frappe-env/bin/bench new-site mysite.localhost
+2025-09-02 11:05:04,678 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost install-app erpnext
+2025-09-02 11:33:16,406 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost install-app erpnext
+2025-09-02 11:34:10,935 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost uninstall-app erpnext
+2025-09-02 11:34:42,443 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost uninstall-app erpnext
+2025-09-02 11:36:30,398 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost uninstall-app erpnext
+2025-09-02 11:38:35,603 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-02 11:38:35,931 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-02 11:38:35,940 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-02 11:38:35,941 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-02 11:38:35,941 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-02 11:39:39,294 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-02 11:39:39,641 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-02 11:39:39,644 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-02 11:39:39,644 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-02 11:39:39,645 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-02 11:39:49,894 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost uninstall-app erpnext
+2025-09-02 11:47:09,162 INFO /home/ubuntuadmin/frappe-env/bin/bench set-config developer_mode 1
+2025-09-02 11:47:29,419 INFO /home/ubuntuadmin/frappe-env/bin/bench set-config --site mysite.localhost developer_mode 1
+2025-09-02 11:47:39,597 INFO /home/ubuntuadmin/frappe-env/bin/bench set-config -site mysite.localhost developer_mode 1
+2025-09-02 11:47:56,345 INFO /home/ubuntuadmin/frappe-env/bin/bench set-config --site mysite.localhost developer_mode 1
+2025-09-02 11:48:05,444 INFO /home/ubuntuadmin/frappe-env/bin/bench set-config mysite.localhost developer_mode 1
+2025-09-02 11:48:19,550 INFO /home/ubuntuadmin/frappe-env/bin/bench set-config site mysite.localhost developer_mode 1
+2025-09-02 11:48:45,197 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost set-config developer_mode 1
+2025-09-02 11:49:04,764 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost set-config developer_mode 1
+2025-09-02 11:49:59,212 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost install-app erpnext
+2025-09-02 11:51:08,505 INFO /home/ubuntuadmin/frappe-env/bin/bench get-app erpnext
+2025-09-02 11:51:09,308 LOG Getting erpnext
+2025-09-02 11:51:09,309 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2025-09-02 11:52:01,119 LOG Installing erpnext
+2025-09-02 11:52:01,120 DEBUG cd /home/ubuntuadmin/frappe-home && /home/ubuntuadmin/frappe-home/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntuadmin/frappe-home/apps/erpnext 
+2025-09-02 11:52:05,622 DEBUG cd /home/ubuntuadmin/frappe-home/apps/erpnext && yarn install --check-files
+2025-09-02 11:52:06,390 DEBUG bench build --app erpnext
+2025-09-02 11:52:06,565 INFO /home/ubuntuadmin/frappe-env/bin/bench build --app erpnext
+2025-09-02 11:52:23,669 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost install-app erpnext
+2025-09-02 11:54:43,994 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost uninstall-app erpnext
+2025-09-02 11:55:19,432 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost install-app erpnext
+2025-09-02 12:00:01,291 INFO /home/ubuntuadmin/frappe-env/bin/bench --verbose --site all backup
+2025-09-02 12:24:56,942 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-02 12:24:57,260 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-02 12:24:57,261 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-02 12:24:57,265 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-02 12:24:57,289 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-02 12:25:41,947 INFO /home/ubuntuadmin/frappe-env/bin/bench cache-clear
+2025-09-02 12:25:55,502 INFO /home/ubuntuadmin/frappe-env/bin/bench clear-cache
+2025-09-02 12:26:09,064 INFO /home/ubuntuadmin/frappe-env/bin/bench --site Procfile apps archived config env logs patches.txt sites clear-cache
+2025-09-02 12:26:31,557 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost library.localhost clear-cache
+2025-09-02 12:26:46,838 INFO /home/ubuntuadmin/frappe-env/bin/bench --site [mysite.localhost library.localhost] clear-cache
+2025-09-02 12:26:58,458 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost clear-cache
+2025-09-02 12:27:09,718 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost clear-website-cache
+2025-09-02 12:27:21,031 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost clear-cache
+2025-09-02 12:27:28,000 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost clearwebsite-cache
+2025-09-02 12:27:32,250 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost clear-website-cache
+2025-09-02 12:27:46,266 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-02 12:27:46,562 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-02 12:27:46,565 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-02 12:27:46,567 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-02 12:27:46,589 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-02 12:36:30,227 INFO /home/ubuntuadmin/frappe-env/bin/bench version
+2025-09-02 12:37:47,420 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost install-app library_management
+2025-09-02 12:37:57,399 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-02 12:37:57,755 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-02 12:37:57,761 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-02 12:37:57,761 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-02 12:37:57,780 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-02 12:56:01,678 INFO /home/ubuntuadmin/frappe-env/bin/bench mariadb
+2025-09-02 12:56:13,029 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost mariadb
+2025-09-03 07:27:56,221 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-03 07:27:56,689 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-03 07:27:56,690 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-03 07:27:56,701 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-03 07:27:56,705 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-03 09:50:42,566 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-03 09:50:43,096 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-03 09:50:43,100 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-03 09:50:43,113 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-03 09:50:43,147 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-03 09:51:28,768 INFO /home/ubuntuadmin/frappe-env/bin/bench --site mysite.localhost clear-cache
+2025-09-03 09:51:36,016 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost clear-website-cache
+2025-09-03 09:51:39,621 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-03 09:51:39,924 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-03 09:51:39,928 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-03 09:51:39,929 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-03 09:51:39,934 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-03 10:03:53,896 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-03 10:03:54,298 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-03 10:03:54,299 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-03 10:03:54,302 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-03 10:03:54,306 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-03 10:42:31,691 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-03 10:42:32,024 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-03 10:42:32,027 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-03 10:42:32,035 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-03 10:42:32,038 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-03 12:00:05,641 INFO /home/ubuntuadmin/frappe-env/bin/bench --verbose --site all backup
+2025-09-03 12:22:26,801 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-03 12:22:27,121 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-03 12:22:27,141 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-03 12:22:27,145 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-03 12:22:27,147 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-04 08:48:41,172 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-04 08:48:41,638 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-04 08:48:41,643 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-04 08:48:41,646 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-04 08:48:41,648 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-04 08:49:13,430 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-04 11:22:48,236 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-04 11:22:48,547 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-04 11:22:48,556 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-04 11:22:48,558 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-04 11:22:48,567 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-04 12:00:04,319 INFO /home/ubuntuadmin/frappe-env/bin/bench --verbose --site all backup
+2025-09-04 12:34:00,107 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-04 12:34:00,409 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-04 12:34:00,420 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-04 12:34:00,420 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-04 12:34:00,438 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-04 18:00:04,816 INFO /home/ubuntuadmin/frappe-env/bin/bench --verbose --site all backup
+2025-09-05 10:27:22,600 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-05 10:27:23,293 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-05 10:27:23,294 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-05 10:27:23,296 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-05 10:27:23,297 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-05 12:00:02,010 INFO /home/ubuntuadmin/frappe-env/bin/bench --verbose --site all backup
+2025-09-05 14:41:15,057 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-05 14:41:15,754 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-05 14:41:15,754 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-05 14:41:15,761 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-05 14:41:15,803 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-05 14:42:27,544 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-05 14:42:28,046 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-05 14:42:28,068 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-05 14:42:28,071 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-05 14:42:28,108 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-05 14:44:08,444 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-05 14:44:14,824 INFO /home/ubuntuadmin/frappe-env/bin/bench stop
+2025-09-05 14:45:14,150 INFO /home/ubuntuadmin/frappe-env/bin/bench stop
+2025-09-05 14:45:21,021 INFO /home/ubuntuadmin/frappe-env/bin/bench
+2025-09-05 14:45:59,224 INFO /home/ubuntuadmin/frappe-env/bin/bench restart
+2025-09-05 14:46:04,447 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-05 14:46:45,252 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-05 14:50:25,105 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-09-05 14:50:25,467 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-09-05 14:50:25,472 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-09-05 14:50:25,472 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-09-05 14:50:25,478 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-09-07 12:00:04,062 INFO /home/ubuntuadmin/frappe-env/bin/bench --verbose --site all backup
+2025-11-18 12:16:11,474 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-11-18 12:16:12,046 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-11-18 12:16:12,049 INFO /home/ubuntuadmin/frappe-env/bin/bench worker
+2025-11-18 12:16:12,051 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-11-18 12:16:12,051 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-11-18 12:47:51,605 INFO /home/ubuntuadmin/frappe-env/bin/bench console
+2025-11-18 12:48:08,257 INFO /home/ubuntuadmin/frappe-env/bin/bench console --site library.localhost
+2025-11-18 12:48:38,499 INFO /home/ubuntuadmin/frappe-env/bin/bench console --site library.localhost
+2025-11-18 12:48:46,102 INFO /home/ubuntuadmin/frappe-env/bin/bench console -site library.localhost
+2025-11-18 12:49:11,009 INFO /home/ubuntuadmin/frappe-env/bin/bench console --site library.localhost
+2025-11-18 12:50:39,450 INFO /home/ubuntuadmin/frappe-env/bin/bench --site library.localhost console
+2025-11-18 13:10:05,854 INFO /home/ubuntuadmin/frappe-env/bin/bench stop
+2025-11-18 13:10:13,304 INFO /home/ubuntuadmin/frappe-env/bin/bench restart
+2025-11-18 13:10:14,363 INFO A newer version of bench is available: 5.25.9 → 5.27.0
+2025-11-18 13:10:22,040 INFO /home/ubuntuadmin/frappe-env/bin/bench start
+2025-11-18 13:10:22,404 INFO /home/ubuntuadmin/frappe-env/bin/bench watch
+2025-11-18 13:10:22,405 INFO /home/ubuntuadmin/frappe-env/bin/bench schedule
+2025-11-18 13:10:22,433 INFO /home/ubuntuadmin/frappe-env/bin/bench serve --port 8000
+2025-11-18 13:10:22,434 INFO /home/ubuntuadmin/frappe-env/bin/bench worker

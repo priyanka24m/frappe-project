@@ -1,0 +1,10 @@
+2025-09-03 11:48:08,063 WARNING database DDL Query made to DB:
+alter table `tabFamily members` add column if not exists parent varchar(140)
+2025-09-03 11:48:08,065 WARNING database DDL Query made to DB:
+alter table `tabFamily members` add column if not exists parenttype varchar(140)
+2025-09-03 11:48:08,066 WARNING database DDL Query made to DB:
+alter table `tabFamily members` add column if not exists parentfield varchar(140)
+2025-09-03 12:36:33,503 WARNING database DDL Query made to DB:
+ALTER TABLE `tabServer Side Scripting` ADD COLUMN `client_side_doc` varchar(140)
+2025-09-03 13:11:26,851 WARNING database DDL Query made to DB:
+ALTER TABLE `tabServer Side Scripting` ADD COLUMN `family_member` varchar(140)
