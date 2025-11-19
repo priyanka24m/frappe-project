@@ -1,0 +1,15 @@
+.cache/
+.dotnet/
+.ipython/
+.local/
+.npm/
+.nvm/
+.vscode-server/
+.yarn/
+.lesshst
+.motd_shown
+.sude_as_admin_successful
+.wget_hsts
+.yarnrc
+frappe-env/
+# *env/
