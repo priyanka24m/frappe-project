@@ -1,0 +1,29 @@
+{
+ "cards": [
+  {
+   "card": "Card One"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Chart one",
+   "width": "Half"
+  },
+  {
+   "chart": "Chart report",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-09-05 17:48:17.418311",
+ "dashboard_name": "Server side dashbo",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-09-05 17:53:34.253342",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "Server side dashbo",
+ "owner": "Administrator"
+}

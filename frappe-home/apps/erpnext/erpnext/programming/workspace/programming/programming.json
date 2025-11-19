@@ -1,0 +1,106 @@
+{
+ "app": "erpnext",
+ "charts": [
+  {
+   "chart_name": "Chart one",
+   "label": "Chart one"
+  }
+ ],
+ "content": "[{\"id\":\"o30wFXKt1v\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Chart one\",\"col\":12}},{\"id\":\"FUMMgKiOSb\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"-3oKzRKXle\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>These are quick references</b></span>\",\"col\":12}},{\"id\":\"tppPLQ099d\",\"type\":\"paragraph\",\"data\":{\"text\":\"All cards linked to Programming Module data\",\"col\":12}},{\"id\":\"tjZAmVfyJm\",\"type\":\"card\",\"data\":{\"card_name\":\"card one\",\"col\":6}},{\"id\":\"C5pqeAqpkQ\",\"type\":\"card\",\"data\":{\"card_name\":\"Card two\",\"col\":6}},{\"id\":\"eMi8-fRXLi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Server Side Script Dashboard\",\"col\":6}},{\"id\":\"ACKPV1P_ls\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Client Side Script\",\"col\":6}}]",
+ "creation": "2025-09-05 18:00:17.230470",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "image-view",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Programming",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "card one",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Server Side Script",
+   "link_count": 0,
+   "link_to": "Server Side Scripting",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Server Side report",
+   "link_count": 0,
+   "link_to": "Server Side Script Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Card two",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client Side script",
+   "link_count": 0,
+   "link_to": "Client Side Script",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-09-05 18:28:21.691515",
+ "modified_by": "Administrator",
+ "module": "Programming",
+ "name": "Programming",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Server Side Script Dashboard",
+   "link_to": "Server side Script",
+   "type": "Dashboard"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Client Side Script",
+   "link_to": "Client Side Script",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Programming",
+ "type": "Workspace"
+}
